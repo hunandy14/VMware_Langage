@@ -36,5 +36,4 @@ function Install-pkg {
     $userDsk = [Environment]::GetFolderPath("Desktop")
     Copy-Item $LnkPath $StarMenu
     Copy-Item $LnkPath $userDsk
-}
-Install-pkg
+} # Install-pkg

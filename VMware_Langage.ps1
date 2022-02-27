@@ -34,6 +34,10 @@ function Install-pkg {
     # 安裝到開始選單
     $StarMenu = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\VMware"
     $userDsk = [Environment]::GetFolderPath("Desktop")
+    
+    Write-Host "覆蓋開始選單捷徑..."
     Copy-Item $LnkPath $StarMenu
+    Write-Host "覆蓋桌面捷徑..."
     Copy-Item $LnkPath $userDsk
+    Write-Host "安裝完成::重新啟動VM即可"
 } # Install-pkg
